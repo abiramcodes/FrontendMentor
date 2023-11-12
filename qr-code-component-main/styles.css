@@ -39,8 +39,24 @@ body{
 
 .card-text-2 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 14   px;
+    font-size: 14px;
     text-align: center;
     margin: 8.2%;
     color: rgb(139, 139, 138);
 }
+
+/* responsive - mobile */ 
+
+@media only screen and (max-width: 480px) {
+
+    .card-main {
+        width: 15rem;
+        height: 23rem;
+    }
+    .card-text-1 {
+        font-size: 14px;
+    }
+    .card-text-2 {
+        font-size: 11px;
+    }
+  }

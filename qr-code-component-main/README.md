@@ -1,6 +1,19 @@
-# Frontend Mentor - QR code component
+<h1 align="center">QR code component challenge</h1>
 
-![Design preview for the QR code component coding challenge](./design/desktop-preview.jpg)
+<div align="center">
+  <h3>
+    <a href="https://frontend-mentor-c2dhrkzjo-abiramcodes-projects.vercel.app/" color="white">
+      Live
+    </a>
+    <span> | </span>
+    <a href="https://www.frontendmentor.io/solutions/qr-code-component-solution-b4jAv_Y26U">
+      Solution
+    </a>
+  </h3>
+</div>
+<br>
+<br>
+<br>
 
 ## Welcome! 👋
 

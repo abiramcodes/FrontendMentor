@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Results summary component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap");
+      body {
+        margin: 0;
+        font-family: "Hanken Grotesk", sans-serif;
+      }
+      .parent-grid {
+        display: grid;
+        grid-template-columns: 50% 1fr;
+        box-shadow: 10px 13px 27px rgba(0, 0, 0, 0.5);
+        width: 700px;
+        height: 500px;
+        border-radius: 5%;
+      }
+      .columns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .left-background {
+        width: 350px;
+        height: 500px;
+        border-radius: 5%;
+        background: linear-gradient(
+          to bottom,
+          hsl(252, 100%, 67%),
+          hsl(241, 81%, 54%)
+        );
+      }
+      .result {
+        font-size: 22px;
+        font-weight: 600;
+        color: #eae0e0a1;
+        letter-spacing: 1px;
+        text-align: center;
+        position: relative;
+        top: 6%;
+      }
+      .circle {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background: linear-gradient(
+          to bottom,
+          hsla(256, 72%, 46%, 1),
+          hsla(241, 72%, 46%, 0)
+        );
+        position: relative;
+        top: 31%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .letter-main {
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+      }
+      .number-1 {
+        color: white;
+        font-size: 4rem;
+        font-weight: 700;
+      }
+      .number-2 {
+        color: #eae0e083;
+      }
+      .great {
+        text-align: center;
+        color: white;
+        font-size: 2rem;
+        font-weight: 700;
+        position: relative;
+        top: 18%;
+        letter-spacing: 1px;
+      }
+      .message {
+        text-align: center;
+        color: #eae0e0a5;
+        font-size: 1rem;
+        position: relative;
+        top: 22%;
+        margin: 0 17%;
+      }
+      .title {
+        font-weight: 700;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+      }
+
+      /* right */
+
+      .right {
+        margin: 12%;
+      }
+      .attributes {
+        margin: 8% 0;
+        display: grid;
+        gap: 12%;
+      }
+      .pad {
+        padding: 5%;
+        border-radius: 7px;
+      }
+      .flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .space-btw {
+        justify-content: space-between;
+      }
+      .reaction {
+        background-color: hsla(0, 100%, 67%, 0.1);
+      }
+      .memory {
+        background-color: hsla(39, 100%, 56%, 0.1);
+      }
+      .visual {
+        background-color: hsla(234, 85%, 45%, 0.1);
+      }
+      .verbal {
+        background-color: hsla(166, 100%, 37%, 0.1);
+      }
+      .continue {
+        color: white;
+        text-align: center;
+        background-color: hsl(224, 30%, 27%);
+        padding: 5%;
+        border-radius: 40px;
+        margin-top: 5%;
+      }
+
+      .text {
+        font-weight: 600;
+        margin-left: 10%;
+      }
+      .reaction-text {
+        color: hsl(0, 100%, 67%);
+      }
+
+      .memory-text {
+        color: hsl(39, 100%, 56%);
+      }
+
+      .verbal-text {
+        color: hsl(166, 100%, 37%);
+      }
+
+      .visual-text {
+        color: hsl(234, 85%, 45%);
+      }
+
+      .hundred {
+        color: #898181d8;
+        font-weight: 600;
+      }
+
+      img {
+        width: 18px;
+        height: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="columns">
+      <div class="parent-grid">
+        <div class="left">
+          <div class="left-background">
+            <div class="result">Your Result</div>
+            <div class="circle">
+              <div class="letter-main">
+                <div class="number-1">76</div>
+                <div class="number-2">of 100</div>
+              </div>
+            </div>
+            <div class="great">Great</div>
+            <div class="message">
+              You scored higher than 65% of the people who have taken these
+              tests
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="title">Summary</div>
+          <div class="attributes">
+            <div class="reaction pad flex">
+              <div class="flex">
+                <img src="./assets/images/icon-reaction.svg" alt="reaction" />
+                <span class="reaction-text text">Reaction</span>
+              </div>
+              <div class="marks">
+                <b>80</b> <span class="hundred">/ 100</span>
+              </div>
+            </div>
+            <div class="memory pad flex">
+              <div class="flex">
+                <img src="./assets/images/icon-memory.svg" alt="memory" />
+                <span class="memory-text text">Memory</span>
+              </div>
+              <div class="marks">
+                <b>92</b> <span class="hundred">/ 100</span>
+              </div>
+            </div>
+            <div class="verbal pad flex">
+              <div class="flex">
+                <img src="./assets/images/icon-verbal.svg" alt="verbal" />
+                <span class="verbal-text text">Verbal</span>
+              </div>
+              <div class="marks">
+                <b>61</b> <span class="hundred">/ 100</span>
+              </div>
+            </div>
+            <div class="visual pad flex">
+              <div class="flex">
+                <img src="/assets/images/icon-visual.svg" alt="visual" />
+                <span class="visual-text text"> Visual </span>
+              </div>
+              <div class="marks">
+                <b>72</b> <span class="hundred">/ 100</span>
+              </div>
+            </div>
+            <div class="continue">Continue</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
